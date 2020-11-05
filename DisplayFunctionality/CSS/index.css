@@ -1,0 +1,123 @@
+.gridContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+@media all and (max-width: 767px) {
+  aside {
+    display: none;
+  }
+  .gridContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-row-gap: 10px;
+  }
+  header nav {
+    /* float: left; */
+    margin-top: -2%;
+    margin-right: 2%;
+    margin: -3%;
+  }
+  header nav ul {
+    display: inline;
+  }
+}
+
+.gridbox, .gridboxfullview {
+  border: 2px solid black;
+  float: left;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.gridbox h2, .gridboxfullview h2 {
+  color: aquamarine;
+}
+
+.gridbox img, .gridboxfullview img {
+  float: left;
+}
+
+.gridbox b, .gridboxfullview b {
+  float: none;
+}
+
+.gridboxfullview {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.gridboxfullview img {
+  width: 50%;
+  height: 50%;
+}
+
+
+.main_header_img p {
+  font-weight: bold;
+  font-size: 3.5rem;
+  font-family: 'josefin sans', sans-serif;
+  color: lightsteelblue;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.main_header_img h2 {
+  font-size: 6.5rem;
+  font-weight: bold;
+  font-family: 'josefin sans', sans-serif;
+  color: lightsteelblue;
+  position: relative;
+  padding-bottom: 2rem;
+  -webkit-transition: all ease 3s;
+  transition: all ease 3s;
+}
+
+.main_header_img span {
+  font-family: 'josefin sans', sans-serif;
+  color: lightsteelblue;
+}
+
+.animatePara div li {
+  font-family: 'josefin sans', sans-serif;
+  font-weight: bold;
+  padding: 0.1rem;
+  height: 4.5rem;
+  margin-bottom: 4.5rem;
+  display: block;
+}
+
+.animatePara div {
+  overflow: hidden;
+  position: relative;
+  height: 8rem;
+  padding-top: 1rem;
+  margin-top: -1rem;
+}
+
+.flip {
+  -webkit-animation: flip 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  animation: flip 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@-webkit-keyframes flip {
+  0% {
+    margin-top: -360px;
+  }
+  5% {
+    margin-top: -270px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  50% {
+    margin-top: -200px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
