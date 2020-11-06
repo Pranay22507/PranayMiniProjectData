@@ -1,0 +1,36 @@
+.gridContainer
+{
+    
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    
+ 
+}
+
+@media all and (max-width:767px)
+{
+aside
+{
+   display: none;
+}
+
+.gridContainer
+{  
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 10px;
+}
+header nav
+{
+/* float: left; */
+margin-top: -2%;
+margin-right: 2%;
+margin: -3%;
+}
+header nav ul 
+{
+    display: inline;
+}
+
+}
